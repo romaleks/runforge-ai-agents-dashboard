@@ -1,0 +1,6 @@
+.badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 9px; border: 1px solid; border-radius: var(--radius-full); font-size: 11px; font-weight: 700; white-space: nowrap; }
+.indicator { font-size: 8px; }
+.queued { color: var(--status-queued-text); background: var(--status-queued-bg); border-color: var(--status-queued-border); }
+.running { color: var(--status-running-text); background: var(--status-running-bg); border-color: var(--status-running-border); }
+.succeeded { color: var(--status-succeeded-text); background: var(--status-succeeded-bg); border-color: var(--status-succeeded-border); }
+.failed { color: var(--status-failed-text); background: var(--status-failed-bg); border-color: var(--status-failed-border); }

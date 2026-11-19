@@ -1,0 +1,12 @@
+.skeletonList { overflow: hidden; border: 1px solid var(--border-light); border-radius: var(--radius-md); background: var(--bg-surface); }
+.skeleton { display: grid; grid-template-columns: 1.4fr 1fr .7fr; gap: 24px; padding: 23px 18px; border-bottom: 1px solid var(--border-light); }
+.skeleton span { height: 13px; border-radius: 4px; background: var(--bg-subtle); animation: pulse 1.4s ease-in-out infinite; }
+.skeleton span:nth-child(2) { animation-delay: .15s; }
+.skeleton span:nth-child(3) { animation-delay: .3s; }
+.state { display: grid; place-items: center; padding: 72px 20px; border: 1px solid var(--border-light); border-radius: var(--radius-md); background: var(--bg-surface); text-align: center; }
+.stateIcon { display: grid; width: 34px; height: 34px; place-items: center; margin-bottom: 14px; border-radius: 50%; color: var(--accent-primary); background: var(--accent-soft); font-weight: 800; }
+.state h2 { margin: 0; color: var(--text-primary); font-size: 18px; }
+.state p { margin: 8px 0 18px; color: var(--text-secondary); font-size: 13px; }
+.state button { padding: 9px 15px; border: 0; border-radius: var(--radius-sm); color: var(--text-inverse); background: var(--accent-primary); font-size: 12px; font-weight: 700; }
+@keyframes pulse { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+@media (max-width: 600px) { .skeleton { grid-template-columns: 1fr 1fr; } .skeleton span:first-child { grid-column: 1 / -1; } }
